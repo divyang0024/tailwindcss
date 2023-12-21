@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-[9999px]">
+    <!-- Position :  -->
+    <div class="border-2 border-slate-900 w-[800px] h-[300px] mx-auto mt-[25%] bg-emerald-200 relative">
+        <!-- reltative -->
+        <div class="text-[purple] border-2 border-slate-900 relative top-5 left-[101px]
+        w-[100px] h-[100px] ">relative</div>
+        <!-- absolute -->
+        <div class="text-[purple] border-2 border-slate-900
+        w-[100px] h-[100px] absolute bottom-0 right-0">absolute</div>
+        <!-- fixed -->
+        <div class="text-[purple] border-2 border-slate-900
+        w-[100px] h-[100px] fixed top-0 left-[50%]">fixed</div>
+        <!-- sticky -->
+        <div class="text-[purple] border-2 border-slate-900
+        w-[100px] h-[100px] sticky top-0">sticky</div>
+    </div>
+
+    <!-- Display :  -->
+    <div class="border-4 border-emerlad-900">
+        <span class="block">this is Tailwind block display property.</span>
+        <span class="inline h-[500px] w-[500px] border-2 border-slate-900">this is Tailwind inline display
+            property.</span>
+        <span class="inline">this is Tailwind inline display property.</span>
+        <span class="inline-block border-2 border-slate-900 h-[400px] w-[400px]">this is tailwind inline-block display
+            property.</span>
+        <span class="none">this is tailwind display none property.
+        </span>
+    </div>
+    <!-- Z-index :  -->
+    <div class=" relative w-full border-2 border-slate-900 mt-[20px]">
+        <div class="relative bg-blue-900 w-[200px] h-[200px] text-white z-[10]">1</div>
+        <div class="relative bg-blue-700 w-[200px] h-[200px] text-white left-[100px] top-[-100px] z-[5]">2</div>
+        <div class="relative bg-blue-500 w-[200px] h-[200px] text-white left-[200px] top-[-200px]">3</div>
+    </div>
+</body>
+
+</html>
