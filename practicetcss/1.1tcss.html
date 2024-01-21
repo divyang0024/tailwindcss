@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap');
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    sans: ['Graphik', 'sans-serif'],
+                    serif: ['Teko', 'serif'],
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- color -->
+    <p class="text-[crimson]">this is text color property.</p>
+    <p class="bg-[cornflowerblue]">this is background color property.</p>
+    <p class="border border-solid border-[chartreuse]">this is border color property</p>
+    <p class="shadow-lg shadow-[purple]">this is shadow color property.</p>
+    <!-- typography -->
+    <p class="family-serif">this font family property.</p>
+    <p class="text-4xl">this is text size property.</p>
+    <p class="font-bold">this is font weight property.</p>
+    <p class="text-center">this text align property.</p>
+    <p class="capitilize">this is text casing property.</p>
+</body>
+
+</html>
