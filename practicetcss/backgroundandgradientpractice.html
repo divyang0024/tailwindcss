@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- <div style="background-image: url('../tailwind-sandbox/tailwind-sandbox-starter/assets/img/img3.jpg');"
+        class="h-[500px] w-[500px] bg-contain border border-slate-500"></div> -->
+
+
+    <div class="h-[400px] w-[400px] bg-contain border border-slate-500">
+        <div style="background-image: url('../tailwind-sandbox/tailwind-sandbox-starter/assets/img/img3.jpg');"
+            class="w-[100%] h-[100%] bg-cover bg-[50px_-50px] "></div>
+
+        <!-- note that the bg-repeat property only works in the case of bg-contain and auto. -->
+        <div class="h-[400px] w-[400px] bg-contain border border-slate-500 mt-[20px] bg-gradient-to-br from-[orange] via-[white] to-[green] shadow-lg shadow-[red]">
+            <div style="background-image: url('../tailwind-sandbox/tailwind-sandbox-starter/assets/img/img3.jpg');"
+                class="w-[50%] h-[50%] bg-contain mt-[25%] ml-[25%] bg-fixed bg-[-240px_300px] bg-no-repeat shadow-lg shadow-[red]"></div>
+<!-- bg-sizing,bg-repeat,bg-scroll,bg-position -->
+
+        </div>
+</body>
+
+</html>
