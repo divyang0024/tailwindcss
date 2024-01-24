@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="xs:bg-[blue]  sm:bg-[crimson] md:bg-[cornflowerblue] lg:bg-[chartreuse] xl:bg-[purple] 2xl:bg-[orange]">
+    <h1 class="text-4xl p-4 bg-[chartreuse] rounded-xl border-2 border-[black] inline-block mt-[50px] "></h1>
+    <script>
+        let msg;
+        function getWidth() {
+            let width = window.innerWidth;
+            document.querySelector('h1').innerHTML = `Width : ${width}px.`;
+        }
+        window.onload = getWidth;
+        window.onresize = getWidth;
+        // }
+
+    </script>
+</body>
+
+</html>
