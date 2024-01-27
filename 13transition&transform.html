@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-yellow-500">
+
+    <h1 class="text-red-500 text-center text-5xl mt-[2%]">
+        Transition
+    </h1>
+    <div class="p-4 m-4 border-4 border-red-500 rounded-xl">
+        <h1 class="text-red-500 text-center text-xl mt-[2%]">Note : <span class="text-[white]">transition</span> and
+            <span class="text-[white]">transition-all</span> are nearly same but subtle difference in the amount of
+            property
+            they support.
+        </h1>
+        <!-- tranistion-colors -->
+        <div class="ml-[5%] mt-[2%] space-x-6">
+
+        </div>
+        <!-- tranistion-colors -->
+        <h1 class="text-[white] text-center text-3xl mt-[2%]">transition-colors</h1>
+        <div class="ml-[5%] mt-[2%] space-x-6">
+            <button
+                class="transition-colors bg-red-500 hover:text-[white] border-2 border-[black] p-[1%] rounded-md">font-color</button>
+            <button
+                class="transition-colors bg-red-500 hover:bg-blue-500 border-2 border-[black] p-[1%] rounded-md">bg-color</button>
+            <button
+                class="transition-colors bg-red-500 hover:border-[white] border-2 border-[black] p-[1%] rounded-md">border-colors</button>
+            <button
+                class="transition-colors bg-red-500 hover:decoration-[white] border-2 border-[black] p-[1%] rounded-md underline">text-decoration-colors</button>
+        </div>
+        <!-- tranistion-opacity -->
+        <h1 class="text-[white] text-center text-3xl mt-[2%]">transition-opacity</h1>
+        <div class="ml-[5%] mt-[2%] space-x-6">
+            <button
+                class="transition-opacity bg-red-500 border-2 border-[black] p-[1%] rounded-md hover:opacity-[50%]">opacity</button>
+        </div>
+        <!-- tranistion-shadow -->
+        <h1 class="text-[white] text-center text-3xl mt-[2%]">transition-shadow</h1>
+        <div class="ml-[5%] mt-[2%] space-x-6">
+            <button
+                class="transition-shadow bg-red-500 border-2 border-[black] p-[1%] rounded-md hover:shadow-inner hover:shadow-[black]">font-color</button>
+        </div>
+    </div>
+    <div class="p-4 m-4 border-4 border-red-500 rounded-xl">
+        <!-- transition duration -->
+        <h1 class="text-[white] text-center text-3xl mt-[2%]">duration</h1>
+        <button
+            class="transition bg-red-500 border-2 border-[black] p-[1%] rounded-md hover:shadow-md hover:shadow-[black] duration-[1000ms] hover:bg-blue-500 hover:text-[white]">transition-duration</button>
+    </div>
+    <div class="p-4 m-4 border-4 border-red-500 rounded-xl">
+        <!-- transition duration -->
+        <h1 class="text-[white] text-center text-3xl mt-[2%]">transition-timing-function</h1>
+        <button
+            class="transition bg-red-500 border-2 border-[black] p-[1%] rounded-md hover:shadow-md hover:shadow-[black] duration-[3000ms] hover:bg-blue-500 hover:text-[white]ease-in">transition-duration</button>
+    </div>
+    <div class="p-4 m-4 border-4 border-red-500 rounded-xl">
+        <!-- transition delay -->
+        <h1 class="text-[white] text-center text-3xl mt-[2%]">transition-delay</h1>
+        <button
+            class="transition bg-red-500 border-2 border-[black] p-[1%] rounded-md hover:shadow-md hover:shadow-[black] duration-[1000ms] hover:bg-blue-500 hover:text-[white]ease-in delay-[5000ms]">transition-duration</button>
+    </div>
+    <h1 class="text-red-500 text-center text-5xl mt-[2%]">
+        Transform
+    </h1>
+    <div class="p-4 m-4 border-4 border-red-500 rounded-xl">
+        <!-- scale -->
+        <h1 class="text-[white] text-center text-3xl mt-[2%]">scale-x-value/scale-y-value</h1>
+        <button
+            class="transition-all bg-red-500 border-2 border-[black] p-[1%] rounded-md hover:scale-x-[-1]">scale-x</button>
+        <button
+            class="transition-all bg-red-500 border-2 border-[black] p-[1%] rounded-md hover:scale-y-[-1]">scale-y</button>
+    </div>
+    <div class="p-4 m-4 border-4 border-red-500 rounded-xl">
+        <!-- rotate -->
+        <h1 class="text-[white] text-center text-3xl mt-[2%]">rotate</h1>
+        <button
+            class="transition-all bg-red-500 border-2 border-[black] p-[1%] rounded-md hover:rotate-[360deg]">rotate</button>
+    </div>
+    <div class="p-4 m-4 border-4 border-red-500 rounded-xl">
+        <!-- translate -->
+        <h1 class="text-[white] text-center text-3xl mt-[2%]">translate-x/translate-y</h1>
+        <button
+            class="transition-all bg-red-500 border-2 border-[black] p-[1%] rounded-md hover:translate-x-[500px]">translate-x</button>
+        <button
+            class="transition-all bg-red-500 border-2 border-[black] p-[1%] rounded-md hover:translate-y-[-500px]">translate-y</button>
+    </div>
+    <div class="p-4 m-4 border-4 border-red-500 rounded-xl">
+        <!-- origin -->
+        <h1 class="text-[white] text-center text-3xl mt-[2%]">origin</h1>
+        <button
+            class="transition-all bg-red-500 border-2 border-[black] p-[1%] rounded-md hover:scale-x-[11] origin-left">origin</button>
+    </div>
+</body>
+
+</html>
