@@ -10,17 +10,17 @@
             theme: {
                 extend: {
                     animation: {
-                        blr: 'blr 2s ease-in-out infinite'
+                        blr: 'blr 5s ease-in-out infinite'
                     },
                     keyframes: {
                         blr: {
-                            '0%, 100%': {
-                                // transform: 'rotate(-45deg)',
-                                // transform: 'translate(0px,0px)'
+                            '0%,100%': {
+                                transform: 'rotate(0deg)',
+                                left: '0px'
                             },
                             '50%': {
-                                transform: 'rotate(45deg)',
-                                transform: 'translate(100px,0px)'
+                                transform: 'rotate(360deg)',
+                                left: '1356px'
                             }
                         }
                     }
@@ -30,7 +30,7 @@
     </script>
 </head>
 
-<body class="bg-yellow-500">
+<body class="bg-yellow-500 w-[100vw]">
     <!-- <div class="h-[200px] w-[200px] rounded-full  ml-[10%] mt-[10%]  text-xl bg-cover bg-no-repeat bg-[0px_-1px] animate-spin"
         style="background-image: url(https://i.pinimg.com/originals/01/df/4b/01df4b9ee95cbf7de46e5c087da229ad.png);">
     </div>
@@ -42,10 +42,12 @@
     </div>
     <div class="h-[100px] w-[100px] rounded-full  ml-[10%] mt-[10%]  text-xl bg-cover bg-no-repeat animate-pulse"
         style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4jxi123BhbIThU1EW9wxYpi7SXe40IGRcwA&usqp=CAU);"> -->
-    <div class="h-[200px] w-[200px] rounded-full  mx-[2%] mt-[10%]  text-xl bg-cover bg-no-repeat animate-blr"
-        style="background-image: url(https://uxwing.com/wp-content/themes/uxwing/download/sport-and-awards/ball-basketball-icon.png);">
+    <div class="animate-bounce">
+        <div class="h-[200px] w-[200px] rounded-full  mx-[0%] mt-[10%]  text-xl bg-cover bg-no-repeat animate-blr relative "
+            style="background-image: url(https://uxwing.com/wp-content/themes/uxwing/download/sport-and-awards/ball-basketball-icon.png);">
+        </div>
     </div>
-    </div>
+
 </body>
 
 </html>
