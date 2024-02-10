@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- global container -->
+    <div class="min-h-screen flex justify-center items-center bg-cyan-50">
+        <!-- card container -->
+        <div class="p-6 my-4 mx-4  bg-white shadow-2xl rounded-3xl md:p-20">
+            <div class="flex flex-col">
+                <!-- header -->
+                <header class="flex flex-col md:flex-row gap-4 mb-8 items-center md:justify-end md:mb-24">
+                    <div class="text-center border-b-2 border-transparent duration-200 hover:border-black">Vector</div>
+                    <div class="text-center border-b-2 border-transparent duration-200 hover:border-black">Illustrations
+                    </div>
+                    <div class="text-center border-b-2 border-transparent duration-200 hover:border-black">Images</div>
+                    <div class="text-center border-b-2 border-transparent duration-200 hover:border-black">Icons</div>
+                </header>
+                <!-- search-bar and input-bar -->
+                <div class="flex flex-col md:flex-row gap-4 md:justify-between mb-8">
+                    <!-- input-bar -->
+                    <div class="flex flex-row border-b grow-[2] justify-between">
+                        <input type="text" placeholder="Search" class="p-2 focus:outline-none" />
+                        <button class="">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="w-8 text-gray-300 duration-200 hover:scale-110" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <circle cx="10" cy="10" r="7" />
+                                <line x1="21" y1="21" x2="15" y2="15" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- search-bar -->
+                    <button
+                        class="p-2 border-2 bg-black text-white rounded-md hover:bg-white hover:text-black hover:border-black duration-200 md:px-12">Upload</button>
+                </div>
+                <!-- image-grid -->
+                <div class="grid gap-4 justify-center md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+                    <div class="relative group ">
+                        <img src="../resources/mini-projects/image-gallery/images/image1.jpg" class="w-72">
+                        <div class="absolute left-0 bottom-0 w-full">
+                            <div
+                                class="opacity-0 text-white group-hover:opacity-100 duration-500 flex flex-row  justify-between p-2 bg-black bg-opacity-40">
+                                <div class="flex flex-col">
+                                    <p class="text-sm">Abstract Painting</p>
+                                    <p class="text-xs">245 likes - 35 Shares</p>
+                                </div>
+                                <div class="flex">
+                                    <img src="../resources/mini-projects/image-gallery/images/bookmark.svg"
+                                        alt="bookmark" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group ">
+                        <img src="../resources/mini-projects/image-gallery/images/image2.jpg" class="w-72">
+                        <div class="absolute left-0 bottom-0 w-full">
+                            <div
+                                class="opacity-0 text-white group-hover:opacity-100 duration-500 flex flex-row  justify-between p-2 bg-black bg-opacity-40">
+                                <div class="flex flex-col">
+                                    <p class="text-sm">Abstract Painting</p>
+                                    <p class="text-xs">245 likes - 35 Shares</p>
+                                </div>
+                                <div class="flex">
+                                    <img src="../resources/mini-projects/image-gallery/images/bookmark.svg"
+                                        alt="bookmark" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group ">
+                        <img src="../resources/mini-projects/image-gallery/images/image3.jpg" class="w-72">
+                        <div class="absolute left-0 bottom-0 w-full">
+                            <div
+                                class="opacity-0 text-white group-hover:opacity-100 duration-500 flex flex-row  justify-between p-2 bg-black bg-opacity-40">
+                                <div class="flex flex-col">
+                                    <p class="text-sm">Abstract Painting</p>
+                                    <p class="text-xs">245 likes - 35 Shares</p>
+                                </div>
+                                <div class="flex">
+                                    <img src="../resources/mini-projects/image-gallery/images/bookmark.svg"
+                                        alt="bookmark" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group ">
+                        <img src="../resources/mini-projects/image-gallery/images/image4.jpg" class="w-72">
+                        <div class="absolute left-0 bottom-0 w-full">
+                            <div
+                                class="opacity-0 text-white group-hover:opacity-100 duration-500 flex flex-row  justify-between p-2 bg-black bg-opacity-40">
+                                <div class="flex flex-col">
+                                    <p class="text-sm">Abstract Painting</p>
+                                    <p class="text-xs">245 likes - 35 Shares</p>
+                                </div>
+                                <div class="flex">
+                                    <img src="../resources/mini-projects/image-gallery/images/bookmark.svg"
+                                        alt="bookmark" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group ">
+                        <img src="../resources/mini-projects/image-gallery/images/image5.jpg" class="w-72">
+                        <div class="absolute left-0 bottom-0 w-full">
+                            <div
+                                class="opacity-0 text-white group-hover:opacity-100 duration-500 flex flex-row  justify-between p-2 bg-black bg-opacity-40">
+                                <div class="flex flex-col">
+                                    <p class="text-sm">Abstract Painting</p>
+                                    <p class="text-xs">245 likes - 35 Shares</p>
+                                </div>
+                                <div class="flex">
+                                    <img src="../resources/mini-projects/image-gallery/images/bookmark.svg"
+                                        alt="bookmark" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group ">
+                        <img src="../resources/mini-projects/image-gallery/images/image6.jpg" class="w-72">
+                        <div class="absolute left-0 bottom-0 w-full">
+                            <div
+                                class="opacity-0 text-white group-hover:opacity-100 duration-500 flex flex-row  justify-between p-2 bg-black bg-opacity-40">
+                                <div class="flex flex-col">
+                                    <p class="text-sm">Abstract Painting</p>
+                                    <p class="text-xs">245 likes - 35 Shares</p>
+                                </div>
+                                <div class="flex">
+                                    <img src="../resources/mini-projects/image-gallery/images/bookmark.svg"
+                                        alt="bookmark" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
