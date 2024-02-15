@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- global container -->
+    <div class="min-h-screen flex justify-center items-center bg-rose-50">
+        <!-- card container -->
+        <div class="relative m-6 bg-white rounded-2xl shadow-2xl flex flex-col md:flex-row md:m-4">
+            <!-- left side -->
+            <div class="flex flex-col p-6 gap-6 md:p-20">
+
+                <!-- login container -->
+                <div class="flex flex-col gap-6">
+                    <h1 class="font-bold text-3xl text-left">Log In</h1>
+                    <p class="text-left max-w-sm">Log in to your account to upload or download pictures, videos or
+                        music.
+                    </p>
+                    <input type="text" placeholder="Enter your email address"
+                        class="border-gray-300 border-2 rounded-md p-6 focus mt-6">
+                </div>
+                <!-- forgot password and next button container  -->
+                <div class="flex flex-col gap-6 md:flex-row md:justify-between">
+                    <div class="text-cyan-700 text-center md:text-left self-center">Forgot password</div>
+                    <input type="button" value="Next"
+                        class="rounded-md p-6 font-semibold bg-cyan-700 text-white hover:bg-opacity-90 md:grow-[0.5] hover:-translate-y-0.5 hover:shadow-lg transition duration-150">
+                </div>
+                <div class="border-b border-b-gray-300 mt-6"></div>
+                <div class="flex flex-col text-sm text-gray-400 text-center">
+                    or log in with
+                </div>
+                <!-- Oauth container -->
+                <div class="flex flex-col gap-6 md:flex-row md:justify-center">
+                    <button
+                        class="rounded-md p-3 text-black bg-white border-2 border-gray-300 flex justify-center gap-3 hover:-translate-y-0.5 hover:shadow-lg transition duration-150 grow-[1]">
+                        <img src="../resources/mini-projects/login-modal/images/google.png" alt="" class="w-9" />
+                        <span class="self-center">Google</span>
+                    </button>
+                    <button
+                        class="rounded-md p-3 text-black bg-white border-2 border-gray-300 flex justify-center gap-3 hover:-translate-y-0.5 hover:shadow-lg transition duration-150 grow-[1]">
+                        <img src="../resources/mini-projects/login-modal/images/facebook.png" alt="" class="w-9" />
+                        <span class="self-center">Facebook</span>
+                    </button>
+                </div>
+            </div>
+            <!-- right side -->
+            <div>
+                <img src="../resources/mini-projects/login-modal/images/image.jpg"
+                    class="hidden md:block w-[400px] h-full object-fill">
+            </div>
+            <!-- close button -->
+            <div
+                class="group absolute top-5 right-5 flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full md:bg-white md:top-4 hover:cursor-pointer hover:-translate-y-0.5 transition duration-150">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-black group-hover:text-gray-600"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
